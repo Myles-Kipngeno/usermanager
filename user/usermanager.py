@@ -4,6 +4,8 @@ from .utils import *
 class Usermanager:
     def __init__(self):
      self.users = {}
+    def __str__(self):
+         return f"{self.users}"
 
     def register_user(self, username ,password, email):
        password = hash_password(password)
