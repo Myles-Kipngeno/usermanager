@@ -5,7 +5,7 @@ class Usermanager:
     def __init__(self):
      self.users = {}
 
-    def register_user(self, username, email ,password):
+    def register_user(self, username ,password, email):
        password = hash_password(password)
        if username in self.users:
           print(f"{self.username} already exist")
